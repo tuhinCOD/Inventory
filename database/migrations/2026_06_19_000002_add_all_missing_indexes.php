@@ -54,12 +54,6 @@ return new class extends Migration
             $table->index('payment_method_id');
         });
 
-        Schema::table('product_discounts', function (Blueprint $table) {
-            $table->index('product_id');
-            $table->index('status_id');
-            $table->index('branch_id');
-        });
-
         Schema::table('product_prices', function (Blueprint $table) {
             $table->index('product_id');
         });
